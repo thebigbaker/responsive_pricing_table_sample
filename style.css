@@ -1,0 +1,67 @@
+body {
+  font-family: "Tahoma", sans-serif;
+  background-color: #333;
+  color:inherit;#fff;
+}
+
+h2 {
+  text-align: center;
+}
+
+.col {
+  float: left;
+  width: 33.3%;
+  padding: 8px;
+  box-sizing: border-box; /*includes padding inside of width;
+  keeps items on the same row across*/
+}
+
+.price-box {
+  background-color: #fff;
+  color: #555;
+  list-style-type: none; /*remove bullets from ul*/
+  border: 1px solid #555;
+  margin: 0;
+  padding: 0; /*removes padding inside of box*/
+  transition: 0.3s;
+}
+
+.price-box:hover, .price-box.best {
+  box-shadow: 0 10px 0 #000; /*constant shadow on best; shadow on hover the rest*/
+}
+
+.price-box .header {
+  background-color: #111;
+  color: #fff;
+  font-size: 25px;
+}
+
+.price-box .header.header-green {
+  background-color: #4CAf50;
+}
+
+.price-box li {
+  padding: 20px;
+  border-bottom: 1px solid #eee;
+  text-align: center;
+}
+
+.price-box .emph {
+  background-color: #f4f4f4;
+  font-size: 20px;
+}
+
+.button {
+  background-color: #4CAf50;
+  border: none;
+  color: #fff;
+  padding: 10px 15px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+@media(max-width: 700px) {
+  .col {
+    width: 100%; /*makes one column w/ boxes on top of each other*/
+  }
+}
